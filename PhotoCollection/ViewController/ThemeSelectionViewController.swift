@@ -19,9 +19,13 @@ class ThemeSelectionViewController: UIViewController {
     }
     
     @IBAction func selectDarkThemeButtonTapped(_ sender: UIButton) {
+        themeHelper?.setThemePreferenceToDark()
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func selectPinkThemeButtonTapped(_ sender: UIButton) {
+        themeHelper?.setThemePreferenceToPink()
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
